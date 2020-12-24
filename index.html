@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <style>
 body {
   margin: 0;
@@ -31,16 +33,39 @@ body {
   left: calc(50% - 150px);
 }
 
+.text2 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 300px;
+  top: calc(50% + 50px);
+  left: calc(50% - 150px);
+  z-index: 10000;
+  display: block;
+}
+
 .img {
   display: inline-block;
   height: 50px;
   z-index: 100;
 }
 
+a {
+  width: 50%;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+
+}
+
 </style>
 <body>
   <div class="text">
     <img class="img" src="jomichaelis-video-black.svg" />
+  </div>
+  <div class="text2">
+    <a>Diese Seite befindet sich noch im Aufbau.</a>
   </div>
   <div id="particles-js"></div>
   <script>
